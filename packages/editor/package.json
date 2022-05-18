@@ -10,7 +10,7 @@
         "check": "svelte-check --tsconfig ./tsconfig.json"
     },
     "devDependencies": {
-        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
+        "@sveltejs/vite-plugin-svelte": "1.0.0-next.44",
         "@tsconfig/svelte": "^2.0.1",
         "svelte": "^3.44.0",
         "svelte-check": "^2.2.7",
@@ -21,6 +21,8 @@
         "prosemirror-model": "^1.16.1",
         "prosemirror-state": "^1.3.4",
         "prosemirror-transform": "^1.4.2",
-        "prosemirror-view": "^1.23.13"
+        "prosemirror-view": "^1.23.13",
+        "vite-plugin-windicss": "^1.8.4",
+        "windicss": "^3.5.4"
     }
 }
