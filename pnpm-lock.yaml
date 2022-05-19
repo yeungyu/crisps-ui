@@ -17,7 +17,10 @@ importers:
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.44
       '@tsconfig/svelte': ^2.0.1
       prosemirror-commands: ^1.2.2
+      prosemirror-example-setup: ^1.1.2
+      prosemirror-menu: ^1.1.4
       prosemirror-model: ^1.16.1
+      prosemirror-schema-basic: ^1.1.2
       prosemirror-state: ^1.3.4
       prosemirror-transform: ^1.4.2
       prosemirror-view: ^1.23.13
@@ -28,7 +31,10 @@ importers:
       windicss: ^3.5.4
     dependencies:
       prosemirror-commands: mirrors.tencent.com/prosemirror-commands/1.2.2
+      prosemirror-example-setup: 1.1.2
+      prosemirror-menu: 1.1.4
       prosemirror-model: mirrors.tencent.com/prosemirror-model/1.16.1
+      prosemirror-schema-basic: 1.1.2
       prosemirror-state: mirrors.tencent.com/prosemirror-state/1.3.4
       prosemirror-transform: mirrors.tencent.com/prosemirror-transform/1.4.2
       prosemirror-view: mirrors.tencent.com/prosemirror-view/1.23.13
@@ -160,6 +166,10 @@ packages:
       fill-range: 7.0.1
     dev: false
 
+  /crelt/1.0.5:
+    resolution: {integrity: sha512-+BO9wPPi+DWTDcNYhr/W90myha8ptzftZT+LwcmUbbok0rcP/fequmFYCw8NMoH7pkAZQzU78b3kYrlua5a9eA==}
+    dev: false
+
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
     engines: {node: '>=6.0'}
@@ -255,9 +265,127 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: false
 
+  /orderedmap/1.1.7:
+    resolution: {integrity: sha512-B1SuadDDwIRXXutaJQ1xjreGL3hxujpexBG4PquoXbgJD8bjp2k8b8qI/mk7q0LUdIx7T8IALWB8mPbfsjbGCw==}
+    dev: false
+
   /picomatch/2.3.1:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
+    dev: false
+
+  /prosemirror-commands/1.2.2:
+    resolution: {integrity: sha512-TX+KpWudMon06frryfpO/u7hsQv2hu8L4VSVbCpi3/7wXHBgl+35mV85qfa3RpT8xD2f3MdeoTqH0vy5JdbXPg==}
+    dependencies:
+      prosemirror-model: 1.16.1
+      prosemirror-state: 1.3.4
+      prosemirror-transform: 1.4.2
+    dev: false
+
+  /prosemirror-dropcursor/1.4.0:
+    resolution: {integrity: sha512-6+YwTjmqDwlA/Dm+5wK67ezgqgjA/MhSDgaNxKUzH97SmeuWFXyLeDRxxOPZeSo7yTxcDGUCWTEjmQZsVBuMrQ==}
+    dependencies:
+      prosemirror-state: 1.3.4
+      prosemirror-transform: 1.4.2
+      prosemirror-view: 1.23.13
+    dev: false
+
+  /prosemirror-example-setup/1.1.2:
+    resolution: {integrity: sha512-MTpIMyqk08jFnzxeRMCinCEMtVSTUtxKgQBGxfCbVe9C6zIOqp9qZZJz5Ojaad1GETySyuj8+OIHHvQsIaaaGQ==}
+    dependencies:
+      prosemirror-commands: 1.2.2
+      prosemirror-dropcursor: 1.4.0
+      prosemirror-gapcursor: 1.2.2
+      prosemirror-history: 1.2.0
+      prosemirror-inputrules: 1.1.3
+      prosemirror-keymap: 1.1.5
+      prosemirror-menu: 1.1.4
+      prosemirror-schema-list: 1.1.6
+      prosemirror-state: 1.3.4
+    dev: false
+
+  /prosemirror-gapcursor/1.2.2:
+    resolution: {integrity: sha512-7YzuRBbu9W7HGQde84kCHfIjaRLNcAdeijbgqrm/R9dsdTWkV+rrdcmic/sCc+bptiNpvjCEE+R6hrbT8zFQeQ==}
+    dependencies:
+      prosemirror-keymap: 1.1.5
+      prosemirror-model: 1.16.1
+      prosemirror-state: 1.3.4
+      prosemirror-view: 1.23.13
+    dev: false
+
+  /prosemirror-history/1.2.0:
+    resolution: {integrity: sha512-B9v9xtf4fYbKxQwIr+3wtTDNLDZcmMMmGiI3TAPShnUzvo+Rmv1GiUrsQChY1meetHl7rhML2cppF3FTs7f7UQ==}
+    dependencies:
+      prosemirror-state: 1.3.4
+      prosemirror-transform: 1.4.2
+      rope-sequence: 1.3.3
+    dev: false
+
+  /prosemirror-inputrules/1.1.3:
+    resolution: {integrity: sha512-ZaHCLyBtvbyIHv0f5p6boQTIJjlD6o2NPZiEaZWT2DA+j591zS29QQEMT4lBqwcLW3qRSf7ZvoKNbf05YrsStw==}
+    dependencies:
+      prosemirror-state: 1.3.4
+      prosemirror-transform: 1.4.2
+    dev: false
+
+  /prosemirror-keymap/1.1.5:
+    resolution: {integrity: sha512-8SZgPH3K+GLsHL2wKuwBD9rxhsbnVBTwpHCO4VUO5GmqUQlxd/2GtBVWTsyLq4Dp3N9nGgPd3+lZFKUDuVp+Vw==}
+    dependencies:
+      prosemirror-state: 1.3.4
+      w3c-keyname: 2.2.4
+    dev: false
+
+  /prosemirror-menu/1.1.4:
+    resolution: {integrity: sha512-2ROsji/X9ciDnVSRvSTqFygI34GEdHfQSsK4zBKjPxSEroeiHHcdRMS1ofNIf2zM0Vpp5/YqfpxynElymQkqzg==}
+    dependencies:
+      crelt: 1.0.5
+      prosemirror-commands: 1.2.2
+      prosemirror-history: 1.2.0
+      prosemirror-state: 1.3.4
+    dev: false
+
+  /prosemirror-model/1.16.1:
+    resolution: {integrity: sha512-r1/w0HDU40TtkXp0DyKBnFPYwd8FSlUSJmGCGFv4DeynfeSlyQF2FD0RQbVEMOe6P3PpUSXM6LZBV7W/YNZ4mA==}
+    dependencies:
+      orderedmap: 1.1.7
+    dev: false
+
+  /prosemirror-schema-basic/1.1.2:
+    resolution: {integrity: sha512-G4q8WflNsR1Q33QAV4MQO0xWrHLOJ+BQcKswGXMy626wlQj6c/1n1v4eC9ns+h2y1r/fJHZEgSZnsNhm9lbrDw==}
+    dependencies:
+      prosemirror-model: 1.16.1
+    dev: false
+
+  /prosemirror-schema-list/1.1.6:
+    resolution: {integrity: sha512-aFGEdaCWmJzouZ8DwedmvSsL50JpRkqhQ6tcpThwJONVVmCgI36LJHtoQ4VGZbusMavaBhXXr33zyD2IVsTlkw==}
+    dependencies:
+      prosemirror-model: 1.16.1
+      prosemirror-transform: 1.4.2
+    dev: false
+
+  /prosemirror-state/1.3.4:
+    resolution: {integrity: sha512-Xkkrpd1y/TQ6HKzN3agsQIGRcLckUMA9u3j207L04mt8ToRgpGeyhbVv0HI7omDORIBHjR29b7AwlATFFf2GLA==}
+    dependencies:
+      prosemirror-model: 1.16.1
+      prosemirror-transform: 1.4.2
+    dev: false
+
+  /prosemirror-transform/1.4.2:
+    resolution: {integrity: sha512-bcIsf3uRZhfab0xRfyyxOEh6eqSszq/hJbDbmUumFnbHBoWhB/uXbpz6vvUxfk0XiEvrZDJ+5pXRrNDc1Hu3vQ==}
+    dependencies:
+      prosemirror-model: 1.16.1
+    dev: false
+
+  /prosemirror-view/1.23.13:
+    resolution: {integrity: sha512-X/NcwZv8pgcEWfs3n++Wz4nDgqDIeDvJ9kfCk6DCoC9XUlDekqJLFt9wCcCUBXedb8hs/dmd+JmcaLgbr67XZw==}
+    dependencies:
+      prosemirror-model: 1.16.1
+      prosemirror-state: 1.3.4
+      prosemirror-transform: 1.4.2
+    dev: false
+
+  /rope-sequence/1.3.3:
+    resolution: {integrity: sha512-85aZYCxweiD5J8yTEbw+E6A27zSnLPNDL0WfPdw3YYodq7WjnTKo0q4dtyQ2gz23iPT8Q9CUyJtAaUNcTxRf5Q==}
     dev: false
 
   /sander/0.5.1:
@@ -439,6 +567,10 @@ packages:
       windicss: 3.5.4
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /w3c-keyname/2.2.4:
+    resolution: {integrity: sha512-tOhfEwEzFLJzf6d1ZPkYfGj+FWhIpBux9ppoP3rlclw3Z0BZv3N7b7030Z1kYth+6rDuAsXUFr+d0VE6Ed1ikw==}
     dev: false
 
   /windicss/3.5.4:
