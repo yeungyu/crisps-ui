@@ -5,7 +5,7 @@ import { exampleSetup } from 'prosemirror-example-setup';
 import { editorSchema } from './store';
 import { menu } from './menu';
 
-setTimeout(() => {
+export default () => {
     let content = document.querySelector('#content');
     let startDoc = DOMParser.fromSchema(editorSchema).parse(content);
 
@@ -18,4 +18,4 @@ setTimeout(() => {
             }),
         }),
     });
-}, 1000);
+};

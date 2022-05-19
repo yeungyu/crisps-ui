@@ -1,4 +1,10 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
+    import init from './test';
+
+    onMount(() => {
+        init();
+    });
 </script>
 
 <main>
@@ -27,11 +33,12 @@
 <!-- <style windi:global>
 </style> -->
 <style>
-    img.dinosaur {
+    :global(img.dinosaur) {
         height: 40px;
         vertical-align: bottom;
         border: 1px solid #0ae;
         border-radius: 4px;
         background: #ddf6ff;
+        display: inline-block;
     }
 </style>
