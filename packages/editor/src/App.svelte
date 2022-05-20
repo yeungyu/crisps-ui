@@ -30,9 +30,9 @@
     </div>
 </main>
 
-<!-- <style windi:global>
-</style> -->
 <style>
+    @import './style/editor.css';
+
     :global(img.dinosaur) {
         height: 40px;
         vertical-align: bottom;

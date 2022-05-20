@@ -1,7 +1,7 @@
 import { MenuItem } from 'prosemirror-menu';
 import { buildMenuItems } from 'prosemirror-example-setup';
-import { dinos, insertDino } from './modules/dino/index';
-import { editorSchema } from './store';
+import { dinos, insertDino } from '../modules/dino/index';
+import { editorSchema } from '../store';
 
 export const menu = buildMenuItems(editorSchema);
 dinos.forEach((name) =>

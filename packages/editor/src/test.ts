@@ -3,7 +3,7 @@ import { EditorState } from 'prosemirror-state';
 import { EditorView } from 'prosemirror-view';
 import { exampleSetup } from 'prosemirror-example-setup';
 import { editorSchema } from './store';
-import { menu } from './menu';
+import { menu } from './plugins/menu';
 
 export default () => {
     let content = document.querySelector('#content');
