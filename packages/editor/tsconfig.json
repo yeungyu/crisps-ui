@@ -14,7 +14,9 @@
          */
         "allowJs": true,
         "checkJs": true,
-        "isolatedModules": true
+        "isolatedModules": true,
+        "removeComments": true,
+        "declaration": true
     },
     "include": [
         "src/**/*.d.ts",
