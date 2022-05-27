@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import init from './test';
+    import init from './editorMain';
 
     onMount(() => {
         init();
