@@ -17,7 +17,8 @@
         "isolatedModules": true,
         "removeComments": true,
         "declaration": true,
-        "strictNullChecks": true
+        "strictNullChecks": true,
+        "strict": true
     },
     "include": [
         "src/**/*.d.ts",
