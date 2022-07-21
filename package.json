@@ -17,6 +17,9 @@
         "registry": "http://localhost:4873"
     },
     "devDependencies": {
+        "@typescript-eslint/parser": "^5.30.7",
+        "eslint": "^8.20.0",
+        "prettier": "^2.7.1",
         "tslib": "^2.4.0",
         "typescript": "^4.7.4",
         "vite": "^3.0.2"
