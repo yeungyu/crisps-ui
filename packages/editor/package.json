@@ -24,7 +24,7 @@
         "prosemirror-schema-basic": "^1.2.0",
         "prosemirror-state": "^1.4.1",
         "prosemirror-transform": "^1.6.0",
-        "prosemirror-view": "^1.26.5",
+        "prosemirror-view": "^1.27.0",
         "vite-plugin-windicss": "^1.8.7",
         "windicss": "^3.5.6"
     }
