@@ -1,15 +1,10 @@
 module.exports = {
+    extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
     root: true,
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        tsconfigRootDir: __dirname,
         project: './tsconfig.json',
-        ecmaVersion: 2018,
-        sourceType: 'module',
+        tsconfigRootDir: __dirname,
     },
-    plugins: ['@typescript-eslint', 'prettier'],
-    extends: ['plugin:@typescript-eslint/recommended'],
-    rules: {
-        quotes: ['single'],
-    },
+    plugins: ['@typescript-eslint'],
 };
