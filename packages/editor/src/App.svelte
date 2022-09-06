@@ -1,9 +1,11 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import init from './editorMain';
+  import Editor from './editorMain';
 
   onMount(() => {
-    init();
+    const doc = document.querySelector('#content');
+    const mountDOM = document.querySelector('#editor');
+    new Editor({ doc, mountDOM });
   });
 </script>
 
