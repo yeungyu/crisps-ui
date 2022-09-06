@@ -1,12 +1,11 @@
 {
-    "editor.formatOnSave": true,
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "svelte.plugin.css.diagnostics.enable": false,
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
-    }
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "svelte.plugin.css.diagnostics.enable": false,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  }
 }

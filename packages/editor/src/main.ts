@@ -1,8 +1,12 @@
 import App from './App.svelte';
 import 'virtual:windi.css';
 
-const app = new App({
-    target: document.getElementById('app'),
-});
+const appDOM = document.getElementById('app');
+let app;
+if (appDOM) {
+  app = new App({
+    target: appDOM,
+  });
+}
 
 export default app;

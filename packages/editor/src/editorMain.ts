@@ -6,16 +6,16 @@ import { editorSchema } from './store';
 import { menu } from './plugins/menu';
 
 export default () => {
-    let content: HTMLDivElement = document.querySelector('#content')!;
-    let startDoc = DOMParser.fromSchema(editorSchema).parse(content);
+  const content: HTMLDivElement = document.querySelector('#content')!;
+  const startDoc = DOMParser.fromSchema(editorSchema).parse(content);
 
-    new EditorView(document.querySelector('#editor'), {
-        state: EditorState.create({
-            doc: startDoc,
-            plugins: exampleSetup({
-                schema: editorSchema,
-                menuContent: menu.fullMenu,
-            }),
-        }),
-    });
+  new EditorView(document.querySelector('#editor'), {
+    state: EditorState.create({
+      doc: startDoc,
+      plugins: exampleSetup({
+        schema: editorSchema,
+        menuContent: menu.fullMenu,
+      }),
+    }),
+  });
 };
