@@ -23,3 +23,41 @@
     ./types/index.d.ts无效
     ./types/test/index.d.ts有效
     ```
+
+## typescript配置错误提示
+### eslint错误提示
+Parsing error: "parserOptions.project" has been set for @typescript-eslint/parser.  
+The file does not match your project config: .eslintrc.js.  
+The file must be included in at least one of the projects provided.  
+
+Solution:  
+1. 在tsconfig.json中添加
+```json
+"include": [
+    ".eslintrc.js",
+    // ...
+]
+```
+2. 或新增单独的tsconfig.eslint.json文件
+```json
+{
+    "include": [
+        ".eslintrc.js"
+    ]
+}
+```
+然后在eslintrc.js中添加
+```js
+parserOptions: {
+    project: [
+        resolve(__dirname, './tsconfig.json'),
+        resolve(__dirname, './tsconfig.eslint.json'),
+    ],
+}
+```
+
+
+
+
+
+
