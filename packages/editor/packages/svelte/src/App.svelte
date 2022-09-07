@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Editor from './editorMain';
+  import Editor from '../core/src/editorMain';
 
   onMount(() => {
     const doc = document.querySelector('#content');
