@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
-  import Editor from '../core/src/editorMain';
+  import Editor from '@crisps-ui/editor-core';
 
   onMount(() => {
     const doc = document.querySelector('#content');

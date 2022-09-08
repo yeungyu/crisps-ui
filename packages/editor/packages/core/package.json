@@ -1,8 +1,9 @@
 {
-  "name": "@crisps-ui/editor",
+  "name": "@crisps-ui/editor-core",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "./src/editorMain.ts",
   "scripts": {
     "dev": "vite",
     "build": "vite build"
