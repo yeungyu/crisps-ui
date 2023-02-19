@@ -31,7 +31,7 @@
 </main>
 
 <style>
-  @import './style/editor.css';
+  /* @import './style/editor.css'; */
 
   :global(img.dinosaur) {
     height: 40px;

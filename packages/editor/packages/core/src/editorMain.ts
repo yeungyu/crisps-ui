@@ -4,6 +4,7 @@ import { EditorView } from 'prosemirror-view';
 import { exampleSetup } from 'prosemirror-example-setup';
 import { editorSchema } from './store';
 import { menu } from './plugins/menu';
+import './style/editor.css';
 
 export default class Editor extends EditorView {
   constructor({ mountDOM, doc }) {
